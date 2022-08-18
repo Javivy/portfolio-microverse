@@ -106,3 +106,9 @@ ul {
     width: 90%;
   }
 }
+
+@media screen and (min-width: 376px) {
+  header {
+    background-image: url('../images/Header-llustration-desktop.svg');
+  }
+}
