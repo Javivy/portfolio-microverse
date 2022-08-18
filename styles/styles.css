@@ -1,0 +1,24 @@
+/* NAVBAR */
+
+nav {
+  width: 40%;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.navbar-link {
+  padding-left: 0.6rem;
+}
+
+.navbar-link > a {
+  text-decoration: none;
+  color: #344563;
+  font-size: 15px;
+  line-height: 20px;
+}
