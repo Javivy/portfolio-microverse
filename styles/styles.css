@@ -216,11 +216,11 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 1rem;
   height: 80%;
+  width: 100%;
   justify-content: space-around;
-  background-image: url('../images/illustration-about-me-mobile.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
+  background: url('../images/Group.png') 0 100% no-repeat, url('../images/illustration-1-about-me-mobile.svg') right -10% no-repeat;
 }
 
 .about-myself-header > h3 {
