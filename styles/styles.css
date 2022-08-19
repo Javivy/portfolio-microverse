@@ -114,7 +114,7 @@ ul {
 
 .short-line {
   margin: 2rem auto;
-  height: .25rem;
+  height: 0.25rem;
   width: 2.5rem;
   background-color: #36b37e;
   border-radius: 24px;
@@ -132,7 +132,7 @@ ul {
   width: 90%;
   display: flex;
   justify-content: center;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   background-color: #ebf0ee;
   margin: 1rem auto;
 }
@@ -170,8 +170,8 @@ ul {
 
 .tech-used-item {
   padding: 8px 12px;
-  background: #Ebf0ee;
-  margin: .4rem;
+  background: #ebf0ee;
+  margin: 0.4rem;
   font-size: 12px;
   border-radius: 4px;
   font-weight: 600;
@@ -250,7 +250,7 @@ ul {
   align-items: center;
   border: 1px solid #d0d9d4;
   background-color: #ebf0ee;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .about-me-card > .img-container {
@@ -277,7 +277,7 @@ ul {
 .tech-learned-item {
   padding: 8px 12px;
   background: #fff;
-  margin: .4rem;
+  margin: 0.4rem;
   font-size: 12px;
   border-radius: 4px;
   font-weight: 600;
@@ -289,10 +289,7 @@ ul {
   text-decoration: none;
 }
 
-
-
 @media screen and (min-width: 200px) {
-
   /* HEADER */
 
   header {
@@ -311,7 +308,6 @@ ul {
 }
 
 @media screen and (min-width: 376px) {
-
   /* HEADER */
 
   header {
