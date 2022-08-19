@@ -42,7 +42,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 .headline > h1 {
@@ -68,7 +68,6 @@ ul {
   text-align: center;
   font-size: 20px;
   color: #172b4d;
-  font-family: 'Inter', sans-serif;
 }
 
 /* HEADER LINKS SECTION */
@@ -85,7 +84,7 @@ ul {
 .chevron-down {
   border: 1px solid #afafaf;
   border-radius: 50%;
-  margin-top: 3.5rem;
+  margin-top: 3rem;
   cursor: pointer;
   height: 35px;
   width: 35px;
@@ -94,10 +93,210 @@ ul {
   align-items: center;
 }
 
+/* WORKS SECTION */
+
+.works-section {
+  display: grid;
+  grid-template-columns: 1 80%;
+  margin-top: 4rem;
+  justify-content: center;
+}
+
+.works-section-header {
+  display: flex;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  color: #172b4d;
+  font-weight: 700;
+  text-align: center;
+  font-size: 36px;
+}
+
+.short-line {
+  margin: 2rem auto;
+  height: 0.25rem;
+  width: 2.5rem;
+  background-color: #36b37e;
+  border-radius: 24px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.project-sample {
+  border: 1px solid #d0d9d4;
+  height: 32rem;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background-color: #ebf0ee;
+  margin: 1rem auto;
+}
+
+.details {
+  justify-self: center;
+  align-self: end;
+  padding: 1rem;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 1rem;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.details > h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  margin: 1rem auto;
+  color: #3a4a42;
+}
+
+.tech-used {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.tech-used-item {
+  padding: 8px 12px;
+  background: #ebf0ee;
+  margin: 0.4rem;
+  font-size: 12px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.tech-used-item > a {
+  color: #3a4a42;
+  text-decoration: none;
+}
+
+.green-btn {
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  text-align: center;
+  padding: 11px;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  background-color: #36b37d;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.green-btn:hover {
+  background-color: #36b37f;
+}
+
+.green-btn:active {
+  background-color: #008552;
+}
+
+/* ABOUT ME SECTION */
+
+.about-myself {
+  display: grid;
+  grid-template-columns: 1 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  justify-content: center;
+}
+
+.about-myself-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+  justify-content: space-around;
+  background-image: url('../images/illustration-about-me-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.about-myself-header > h3 {
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  font-size: 36px;
+  color: #172b4d;
+}
+
+.about-myself-header > p {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  width: 85%;
+  color: #172b4d;
+  margin: 1rem 0;
+}
+
+.about-me-card {
+  margin: 2rem auto;
+  width: 90%;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #d0d9d4;
+  background-color: #ebf0ee;
+  border-radius: 0.5rem;
+}
+
+.about-me-card > .img-container {
+  margin-top: 1rem;
+}
+
+.about-me-card > h3 {
+  color: #344563;
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.tech-learned {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.tech-learned-item {
+  padding: 8px 12px;
+  background: #fff;
+  margin: 0.4rem;
+  font-size: 12px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+}
+
+.tech-learned-item > a {
+  color: #36b37e;
+  text-decoration: none;
+}
+
 @media screen and (min-width: 200px) {
+  /* HEADER */
+
   header {
     background-image: url('../images/header-illsutration-mobile.svg');
   }
+
+  /* HEADLINE */
 
   .headline > h1 {
     text-align: center;
@@ -109,6 +308,8 @@ ul {
 }
 
 @media screen and (min-width: 376px) {
+  /* HEADER */
+
   header {
     background-image: url('../images/Header-llustration-desktop.svg');
   }
