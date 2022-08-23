@@ -5,7 +5,7 @@
 }
 
 header {
-  background-image: url('../images/Header-llustration-desktop.svg');
+  background-image: url("../images/Header-llustration-desktop.svg");
   height: 100vh;
 }
 
@@ -14,7 +14,7 @@ header {
 nav {
   /* width: 40%; */
   margin: 0 auto;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   padding-top: 1rem;
 }
 
@@ -49,7 +49,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 800;
 }
 
@@ -105,7 +105,7 @@ ul {
 .works-section-header {
   display: flex;
   justify-content: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #172b4d;
   font-weight: 700;
   text-align: center;
@@ -144,7 +144,7 @@ ul {
   background-color: #fff;
   width: 100%;
   border-radius: 1rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -188,7 +188,7 @@ ul {
   border-radius: 4px;
   text-align: center;
   padding: 11px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #fff;
   background-color: #36b37d;
   margin: 0 auto;
@@ -220,19 +220,19 @@ ul {
   height: 80%;
   width: 100%;
   justify-content: space-around;
-  background: url('../images/Group.png') 0 100% no-repeat, url('../images/illustration-1-about-me-mobile.svg') right -10% no-repeat;
+  background: url("../images/Group.png") 0 100% no-repeat, url("../images/illustration-1-about-me-mobile.svg") right -10% no-repeat;
 }
 
 .about-myself-header > h3 {
   font-weight: 700;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   text-align: center;
   font-size: 36px;
   color: #172b4d;
 }
 
 .about-myself-header > p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 20px;
   text-align: center;
   width: 85%;
@@ -259,7 +259,7 @@ ul {
 
 .about-me-card > h3 {
   color: #344563;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 24px;
   font-weight: 600;
   text-align: center;
@@ -281,7 +281,7 @@ ul {
   font-size: 12px;
   border-radius: 4px;
   font-weight: 600;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .tech-learned-item > a {
@@ -289,11 +289,112 @@ ul {
   text-decoration: none;
 }
 
+/* FORM SECTION */
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  margin-top: 2rem;
+  background: url("../images/form-background.svg") bottom right no-repeat;
+}
+
+form > h2 {
+  text-align: center;
+  font-weight: 700;
+  color: #172b4d;
+  font-size: 40px;
+  padding: 1rem;
+}
+
+.form-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 3rem auto;
+  width: 80%;
+}
+
+.form-li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+}
+
+#name {
+  margin: 1rem 0;
+  width: 100%;
+  padding: 16px;
+  border-radius: 4px;
+  border: 1px solid #d0d9d4;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+
+#name:focus {
+  border: 1px solid #60c095;
+  outline: none;
+}
+
+#email-address {
+  padding: 16px;
+  border-radius: 4px;
+  border: 1px solid #d0d9d4;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+
+#email-address:focus {
+  border: 1px solid #60c095;
+  outline: none;
+}
+
+#message {
+  margin: 1rem 0;
+  padding: 16px;
+  border-radius: 4px;
+  border: 1px solid #d0d9d4;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 6.5rem;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+
+#message:focus {
+  border: 1px solid #60c095;
+  outline: none;
+}
+
+.form-social-links {
+  margin: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.footer-email {
+  font-family: "Inter", sans-serif;
+  color: #42526e;
+  font-size: 20px;
+}
+
 @media screen and (min-width: 200px) {
   /* HEADER */
 
   header {
-    background-image: url('../images/header-illsutration-mobile.svg');
+    background-image: url("../images/header-illsutration-mobile.svg");
   }
 
   /* HEADLINE */
@@ -311,6 +412,6 @@ ul {
   /* HEADER */
 
   header {
-    background-image: url('../images/Header-llustration-desktop.svg');
+    background-image: url("../images/Header-llustration-desktop.svg");
   }
 }
