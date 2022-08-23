@@ -197,7 +197,7 @@ ul {
 
 .green-btn:hover {
   background-color: #36b37f;
-  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .green-btn:active {
@@ -221,8 +221,7 @@ ul {
   height: 80%;
   width: 100%;
   justify-content: space-around;
-  background: url("../images/Group.png") 0 100% no-repeat,
-    url("../images/illustration-1-about-me-mobile.svg") right -10% no-repeat;
+  background: url("../images/Group.png") 0 100% no-repeat, url("../images/illustration-1-about-me-mobile.svg") right -10% no-repeat;
 }
 
 .about-myself-header > h3 {
