@@ -5,7 +5,8 @@
 }
 
 header {
-  background-image: url("../images/Header-llustration-desktop.svg");
+  background-image: url("../images/header-illsutration-mobile.svg");
+  background-size: cover;
   height: 100vh;
 }
 
@@ -16,6 +17,10 @@ nav {
   margin: 0 auto;
   font-family: "Inter", sans-serif;
   padding-top: 1rem;
+}
+
+.desktop-ul {
+  display: none;
 }
 
 ul {
@@ -62,6 +67,7 @@ ul {
 }
 
 .headline > p {
+  font-family: 'Inter', sans-serif;
   margin-top: 1rem;
   width: 50%;
   line-height: 1.8rem;
@@ -208,8 +214,7 @@ ul {
 
 .about-myself {
   display: grid;
-  grid-template-columns: 1 1fr;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1fr;
   justify-content: center;
 }
 
@@ -217,7 +222,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 1rem;
+  margin: 5rem auto;
   height: 80%;
   width: 100%;
   justify-content: space-around;
@@ -298,9 +303,8 @@ form {
   align-items: center;
   align-content: center;
   width: 100%;
-  margin: 0 auto;
+  margin: 2rem auto;
   font-family: "Inter", sans-serif;
-  margin-top: 2rem;
   background: url("../images/form-background.svg") bottom right no-repeat;
 }
 
@@ -329,7 +333,11 @@ form > h2 {
   font-family: "Inter", sans-serif;
 }
 
-#name {
+.fst-and-lst-nm-input {
+  display: none;
+}
+
+#full-name {
   margin: 1rem 0;
   width: 100%;
   padding: 16px;
@@ -339,7 +347,37 @@ form > h2 {
   font-size: 15px;
 }
 
-#name:focus {
+#full-name:focus {
+  border: 1px solid #60c095;
+  outline: none;
+}
+
+#first-name {
+  margin: 1rem 0.5rem 1rem 0;
+  width: 80%;
+  padding: 16px;
+  border-radius: 4px;
+  border: 1px solid #d0d9d4;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+
+#first-name:focus {
+  border: 1px solid #60c095;
+  outline: none;
+}
+
+#last-name {
+  margin: 1rem 0 1rem 0.5rem;
+  width: 80%;
+  padding: 16px;
+  border-radius: 4px;
+  border: 1px solid #d0d9d4;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+
+#last-name:focus {
   border: 1px solid #60c095;
   outline: none;
 }
@@ -375,20 +413,27 @@ form > h2 {
   outline: none;
 }
 
-.form-social-links {
-  margin: 0;
-}
-
 footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-content: center;
   margin: 2rem;
 }
 
 .footer-email {
   font-family: "Inter", sans-serif;
   color: #42526e;
-  font-size: 20px;
+  font-size: 17px;
+  text-align: center;
+}
+
+.footer-social-links {
+  margin: 1rem auto;
+}
+
+.gray-line {
+  display: none;
 }
 
 @media screen and (min-width: 200px) {
@@ -409,8 +454,199 @@ footer {
   }
 }
 
+@media screen and (min-width: 200px) and (max-width: 300px) {
+  /* WORKS SECTION */
+
+  .works-section {
+    margin-top: 10rem;
+  }
+
+  /* ABOUT MYSELF SECTION */
+
+  .about-myself {
+    margin-top: 3.5rem;
+  }
+}
+
 @media screen and (min-width: 376px) {
+  /* HEADER */
+
   header {
-    background: url('../images/Header-llustration-desktop.svg') center no-repeat;
+    background-image: url('../images/Header-llustration-desktop.svg');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* HEADER */
+
+  header {
+    display: grid;
+    grid-template-areas:
+      'nav nav nav nav'
+      'hl hl hl hl'
+      'hl hl hl hl'
+      'hl hl hl hl';
+  }
+
+  nav {
+    grid-area: nav;
+  }
+
+  .mobile-ul {
+    display: none;
+  }
+
+  .desktop-ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* HEADLINE */
+
+  .headline > h1 {
+    font-size: 48px;
+  }
+
+  /* RECENT WORKS SECTION */
+
+  .works-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+
+  /* ABOUT ME SECTION */
+
+  .about-myself {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about-myself-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 17rem;
+    margin-bottom: 3rem;
+  }
+
+  .about-myself-header > p {
+    width: 77%;
+  }
+
+  .ab-me-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    margin: 0 3rem;
+  }
+
+  .about-me-card {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* WORKS SECTION */
+
+  .projects {
+    grid-template-columns: repeat(3, 33.33%);
+    margin: 0 2rem;
+  }
+
+  .project-sample {
+    width: 95%;
+  }
+
+  /* ABOUT ME SECTION */
+
+  .about-myself-header {
+    background: url("../images/about-me-desktop-bg-2.svg") 0 100% no-repeat, url("../images/About-me-desktop-bg.svg") right top no-repeat;
+    height: 17rem;
+    margin-top: 0;
+  }
+
+  .about-myself-header > p {
+    width: 55%;
+  }
+
+  /* FORM SECTION */
+
+  form {
+    display: grid;
+    grid-template-areas:
+      'title form form form'
+      'title form form form'
+      'links  links links links';
+    background: url('../images/illustration-1-contact-form-desktop.svg') bottom left no-repeat, url('../images/illustration-2-contact-form-desktop.svg') bottom no-repeat;
+    height: 35rem;
+    margin: 0;
+  }
+
+  form > h2 {
+    grid-area: title;
+  }
+
+  .form-ul {
+    grid-area: form;
+  }
+
+  .full-name-input {
+    display: none;
+  }
+
+  .fst-and-lst-nm-input {
+    display: flex;
+  }
+
+  /* GRAY LINE */
+
+  .gray-line {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #dfe1e6;
+  }
+
+  /* FOOTER */
+
+  .footer-email {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  /* HEADER */
+
+  header {
+    background-image: url('../images/Header-llustration-desktop.svg');
+    background-size: cover;
+  }
+
+  .navbar-link > a {
+    font-size: 40px;
+  }
+
+  /* HEADLINE */
+
+  .headline {
+    margin-top: 18rem;
+  }
+
+  .headline > h1 {
+    font-size: 78px;
+  }
+
+  .headline > p {
+    font-size: 38px;
+    margin-top: 3rem;
+    line-height: 1;
+    width: 36%;
   }
 }
