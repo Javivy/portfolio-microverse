@@ -580,21 +580,19 @@ footer {
 
   form {
     display: grid;
-    grid-template-areas:
-      'title form form form'
-      'title form form form'
-      'links  links links links';
+    grid-template-columns: 35% 65%;
     background: url('../images/illustration-1-contact-form-desktop.svg') bottom left no-repeat, url('../images/illustration-2-contact-form-desktop.svg') bottom no-repeat;
     height: 35rem;
     margin: 0;
   }
 
-  form > h2 {
-    grid-area: title;
+  .form-btn-li {
+    display: flex;
+    justify-content: flex-start;
   }
 
-  .form-ul {
-    grid-area: form;
+  .form-btn {
+    margin: 0;
   }
 
   .full-name-input {
