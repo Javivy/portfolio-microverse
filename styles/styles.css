@@ -404,6 +404,7 @@ form > h2 {
   min-width: 100%;
   max-width: 100%;
   min-height: 6.5rem;
+  max-height: 13.5rem;
   font-family: "Inter", sans-serif;
   font-size: 15px;
 }
