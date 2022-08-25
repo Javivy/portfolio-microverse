@@ -625,7 +625,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (min-width: 1040px) and (max-width: 1152px) {
   /* ABOUT ME SECTION */
 
   .about-me-card:nth-child(1) > .tech-learned {
