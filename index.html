@@ -16,7 +16,18 @@
       <!-- NAVBAR -->
 
       <nav>
-        <ul>
+        <ul class="desktop-ul">
+          <li class="navbar-link">
+            <a href="#">Portfolio</a>
+          </li>
+          <li class="navbar-link">
+            <a href="#">About</a>
+          </li>
+          <li class="navbar-link">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+        <ul class="mobile-ul">
           <li class="navbar-link"><a href="#">Welcome</a></li>
           <li class="navbar-link">
             <a href="#"><img src="icons/menu-icon.png" alt="Icon" /></a>
@@ -159,53 +170,61 @@
             Get My Resume
           </button>
         </div>
-        <div class="about-me-card">
-          <div class="img-container">
-            <img src="icons/icon-languages.svg" alt="Programming Languages" />
+        <div class="ab-me-cards-container">
+          <div class="about-me-card">
+            <div class="img-container">
+              <img src="icons/icon-languages.svg" alt="Programming Languages" />
+            </div>
+            <h3>Languages</h3>
+            <ul class="tech-learned">
+              <li class="tech-learned-item"><a href="#">HTML</a></li>
+              <li class="tech-learned-item"><a href="#">Ruby</a></li>
+              <li class="tech-learned-item"><a href="#">JavaScript</a></li>
+              <li class="tech-learned-item"><a href="#">CSS</a></li>
+            </ul>
           </div>
-          <h3>Languages</h3>
-          <ul class="tech-learned">
-            <li class="tech-learned-item"><a href="#">HTML</a></li>
-            <li class="tech-learned-item"><a href="#">Ruby</a></li>
-            <li class="tech-learned-item"><a href="#">JavaScript</a></li>
-            <li class="tech-learned-item"><a href="#">CSS</a></li>
-          </ul>
-        </div>
-        <div class="about-me-card">
-          <div class="img-container">
-            <img src="icons/icon-frameworks.svg" alt="Frameworks" />
+          <div class="about-me-card">
+            <div class="img-container">
+              <img src="icons/icon-frameworks.svg" alt="Frameworks" />
+            </div>
+            <h3>Frameworks</h3>
+            <ul class="tech-learned">
+              <li class="tech-learned-item"><a href="#">Bootstrap</a></li>
+              <li class="tech-learned-item"><a href="#">Ruby on rails</a></li>
+              <li class="tech-learned-item"><a href="#">RSpec</a></li>
+              <li class="tech-learned-item"><a href="#">Capybara</a></li>
+              <li class="tech-learned-item"><a href="#">Selenium</a></li>
+            </ul>
           </div>
-          <h3>Frameworks</h3>
-          <ul class="tech-learned">
-            <li class="tech-learned-item"><a href="#">Bootstrap</a></li>
-            <li class="tech-learned-item"><a href="#">Ruby on rails</a></li>
-            <li class="tech-learned-item"><a href="#">RSpec</a></li>
-            <li class="tech-learned-item"><a href="#">Capybara</a></li>
-            <li class="tech-learned-item"><a href="#">Selenium</a></li>
-          </ul>
-        </div>
-        <div class="about-me-card">
-          <div class="img-container">
-            <img src="icons/icon-skills.svg" alt="Skills" />
+          <div class="about-me-card">
+            <div class="img-container">
+              <img src="icons/icon-skills.svg" alt="Skills" />
+            </div>
+            <h3>Skills</h3>
+            <ul class="tech-learned">
+              <li class="tech-learned-item"><a href="#">Codekit</a></li>
+              <li class="tech-learned-item"><a href="#">GitHub</a></li>
+              <li class="tech-learned-item"><a href="#">Codepen</a></li>
+              <li class="tech-learned-item"><a href="#">Gitlab</a></li>
+              <li class="tech-learned-item"><a href="#">Terminal</a></li>
+            </ul>
           </div>
-          <h3>Skills</h3>
-          <ul class="tech-learned">
-            <li class="tech-learned-item"><a href="#">Codekit</a></li>
-            <li class="tech-learned-item"><a href="#">GitHub</a></li>
-            <li class="tech-learned-item"><a href="#">Codepen</a></li>
-            <li class="tech-learned-item"><a href="#">Gitlab</a></li>
-            <li class="tech-learned-item"><a href="#">Terminal</a></li>
-          </ul>
         </div>
       </section>
+
+      <!-- FORM SECTION -->
 
       <form action="https://formspree.io/f/xoqbveqq" method="post">
         <h2>
           I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
         </h2>
         <ul class="form-ul">
-          <li class="form-li">
-            <input autocomplete="off" maxlength="30" type="text" name="name" id="name" placeholder="Full Name" required>
+          <li class="form-li fst-and-lst-nm-input">
+            <input autocomplete="off" maxlength="30" type="text" name="first-name" id="first-name" placeholder="First Name" required>
+            <input autocomplete="off" maxlength="30" type="text" name="last-name" id="last-name" placeholder="Last Name" required>
+          </li>
+          <li class="form-li full-name-input">
+            <input autocomplete="off" maxlength="30" type="text" name="full-name" id="full-name" placeholder="Full Name" required>
           </li>
           <li class="form-li">
             <input autocomplete="off" type="email" name="email-address" id="email-address" placeholder="Email address" required>
@@ -213,38 +232,42 @@
           <li class="form-li">
             <textarea autocomplete="off" name="message" id="message" cols="30" rows="10" maxlength="500" placeholder="Enter text here" required></textarea>
           </li>
-          <li class="form-li">
+          <li class="form-li form-btn-li">
             <button type="submit" class="green-btn form-btn">
               Get in touch
             </button>
           </li>
         </ul>
-        <div class="social-media-headline form-social-links">
-          <ul class="links">
-            <li class="link-item">
-              <a href="#"><img src="icons/Vector.png" alt="Github" /></a>
-            </li>
-            <li class="link-item">
-              <a href="#"><img src="icons/Frame.png" alt="Linkedin" /></a>
-            </li>
-            <li class="link-item">
-              <a href="#"><img src="icons/Vector-hand.png" alt="Icon" /></a>
-            </li>
-            <li class="link-item">
-              <a href="#"><img src="icons/twitter.png" alt="Twitter" /></a>
-            </li>
-            <li class="link-item">
-              <a href="#"><img src="icons/m-icon.png" alt="Icon" /></a>
-            </li>
-          </ul>
-        </div>
       </form>
     </main>
+    
+    <div class="gray-line"></div>
     
     <!-- FOOTER -->
 
     <footer>
+      <div class="social-media-headline footer-social-links">
+        <ul class="links">
+          <li class="link-item">
+            <a href="#"><img src="icons/Vector.png" alt="Github" /></a>
+          </li>
+          <li class="link-item">
+            <a href="#"><img src="icons/Frame.png" alt="Linkedin" /></a>
+          </li>
+          <li class="link-item">
+            <a href="#"><img src="icons/Vector-hand.png" alt="Icon" /></a>
+          </li>
+          <li class="link-item">
+            <a href="#"><img src="icons/twitter.png" alt="Twitter" /></a>
+          </li>
+          <li class="link-item">
+            <a href="#"><img src="icons/m-icon.png" alt="Icon" /></a>
+          </li>
+        </ul>
+      </div>
       <p class="footer-email">javiervargasortega8683@gmail.com</p>
     </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
