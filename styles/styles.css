@@ -280,6 +280,10 @@ ul {
   margin-bottom: 1.5rem;
 }
 
+.about-me-card:nth-child(1) > .tech-learned {
+  margin-bottom: 4.5rem;
+}
+
 .tech-learned-item {
   padding: 8px 12px;
   background: #fff;
@@ -545,11 +549,20 @@ footer {
   .ab-me-cards-container {
     display: grid;
     grid-template-columns: repeat(3, 33.33%);
-    margin: 0 3rem;
+    margin: 0 6.5rem;
   }
 
   .about-me-card {
     width: 95%;
+  }
+}
+
+@media screen and (max-width: 914px) {
+  .ab-me-cards-container {
+    display: grid;
+    grid-template-columns: 90%;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -596,14 +609,6 @@ footer {
     margin: 0;
   }
 
-  .full-name-input {
-    display: none;
-  }
-
-  .fst-and-lst-nm-input {
-    display: flex;
-  }
-
   /* GRAY LINE */
 
   .gray-line {
@@ -617,6 +622,14 @@ footer {
 
   .footer-email {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  /* ABOUT ME SECTION */
+
+  .about-me-card:nth-child(1) > .tech-learned {
+    margin-bottom: 1.5rem;
   }
 }
 
