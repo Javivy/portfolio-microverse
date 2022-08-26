@@ -99,12 +99,16 @@ ul {
   align-items: center;
 }
 
+.chevron-down:hover {
+  background-color: #36b37f;
+}
+
 /* WORKS SECTION */
 
 .works-section {
   display: grid;
   grid-template-columns: 1 80%;
-  margin-top: 4rem;
+  margin-top: 6rem;
   justify-content: center;
 }
 
@@ -297,6 +301,10 @@ ul {
 .tech-learned-item > a {
   color: #36b37e;
   text-decoration: none;
+}
+
+.navbar-link > a:hover {
+  color: #23bb7c;
 }
 
 /* FORM SECTION */
