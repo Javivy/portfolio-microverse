@@ -85,6 +85,11 @@ ul {
 
 .link-item {
   margin-left: 1rem;
+  transition: all 0.3s;
+}
+
+.link-item:hover {
+  transform: scale(1.3);
 }
 
 .chevron-down {
@@ -619,17 +624,27 @@ footer {
 
   /* GRAY LINE */
 
-  .gray-line {
+  /* .gray-line {
     display: block;
     height: 1px;
     width: 100%;
+    margin-top: 1rem;
     background-color: #dfe1e6;
-  }
+  } */
 
   /* FOOTER */
 
+  footer {
+    border-top: 1px solid #dfe1e6;
+    margin: 0.5rem;
+  }
+
   .footer-email {
     display: none;
+  }
+
+  .footer-social-links {
+    margin-top: 1rem auto;
   }
 }
 
