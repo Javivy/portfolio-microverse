@@ -39,6 +39,7 @@ ul {
   font-size: 15px;
   line-height: 20px;
   font-weight: 600;
+  transition: color 0.5s;
 }
 
 /* HEADLINE */
@@ -102,10 +103,11 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.5s;
 }
 
 .chevron-down:hover {
-  background-color: #36b37f;
+  background-color: #bdbdbd;
 }
 
 /* WORKS SECTION */
@@ -190,6 +192,11 @@ ul {
   font-size: 12px;
   border-radius: 4px;
   font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.tech-used-item:hover {
+  background: #cdd3d1;
 }
 
 .tech-used-item > a {
@@ -208,6 +215,7 @@ ul {
   margin: 0 auto;
   cursor: pointer;
   border-radius: 4px;
+  transition: all 0.3s;
 }
 
 .green-btn:hover {
@@ -363,6 +371,7 @@ form > h2 {
   border: 1px solid #d0d9d4;
   font-family: "Inter", sans-serif;
   font-size: 15px;
+  transition: border 0.3s;
 }
 
 #full-name:focus {
@@ -378,6 +387,7 @@ form > h2 {
   border: 1px solid #d0d9d4;
   font-family: "Inter", sans-serif;
   font-size: 15px;
+  transition: border 0.3s;
 }
 
 #first-name:focus {
@@ -393,6 +403,7 @@ form > h2 {
   border: 1px solid #d0d9d4;
   font-family: "Inter", sans-serif;
   font-size: 15px;
+  transition: border 0.3s;
 }
 
 #last-name:focus {
@@ -407,6 +418,7 @@ form > h2 {
   width: 100%;
   font-family: "Inter", sans-serif;
   font-size: 15px;
+  transition: border 0.3s;
 }
 
 #email-address:focus {
@@ -425,6 +437,7 @@ form > h2 {
   max-height: 13.5rem;
   font-family: "Inter", sans-serif;
   font-size: 15px;
+  transition: border 0.3s;
 }
 
 #message:focus {
@@ -701,6 +714,7 @@ footer {
 
   50% {
     box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+    transition: border 0.3s;
   }
 
   100% {
