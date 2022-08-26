@@ -708,9 +708,11 @@ footer {
   }
 }
 
-.card:hover {
-  /* border: 0.5rem solid #172b4d; */
+.about-me-card {
+  transition: all 1s;
+}
+
+.about-me-card:hover {
+  transform: scale(1.2);
   box-shadow: 0px 0px 23px 6px #172b4d52;
-  animation: shadow-breathe 1s infinite ease-in-out;
-  transform: scale(1.05);
 }
