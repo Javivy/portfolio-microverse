@@ -243,8 +243,7 @@ ul {
   height: 80%;
   width: 100%;
   justify-content: space-around;
-  background: url("../images/Group.png") 0 100% no-repeat,
-    url("../images/illustration-1-about-me-mobile.svg") right -10% no-repeat;
+  background: url("../images/Group.png") 0 100% no-repeat, url("../images/illustration-1-about-me-mobile.svg") right -10% no-repeat;
 }
 
 .about-myself-header > h3 {
@@ -275,6 +274,7 @@ ul {
   border: 1px solid #d0d9d4;
   background-color: #ebf0ee;
   border-radius: 0.5rem;
+  transition: transform 1s, box-shadow 1s;
 }
 
 .about-me-card > .img-container {
@@ -608,8 +608,7 @@ footer {
   /* ABOUT ME SECTION */
 
   .about-myself-header {
-    background: url("../images/about-me-desktop-bg-2.svg") 0 100% no-repeat,
-      url("../images/About-me-desktop-bg.svg") right top no-repeat;
+    background: url("../images/about-me-desktop-bg-2.svg") 0 100% no-repeat, url("../images/About-me-desktop-bg.svg") right top no-repeat;
     height: 17rem;
     margin-top: 0;
   }
@@ -623,9 +622,7 @@ footer {
   form {
     display: grid;
     grid-template-columns: 35% 65%;
-    background: url("../images/illustration-1-contact-form-desktop.svg") bottom
-        left no-repeat,
-      url("../images/illustration-2-contact-form-desktop.svg") bottom no-repeat;
+    background: url("../images/illustration-1-contact-form-desktop.svg") bottom left no-repeat, url("../images/illustration-2-contact-form-desktop.svg") bottom no-repeat;
     height: 35rem;
     margin: 0;
   }
@@ -722,11 +719,7 @@ footer {
   }
 }
 
-.about-me-card {
-  transition: all 1s;
-}
-
 .about-me-card:hover {
   transform: scale(1.2);
-  box-shadow: 0px 0px 23px 6px #172b4d52;
+  box-shadow: 0 0 23px 6px #172b4d52;
 }
