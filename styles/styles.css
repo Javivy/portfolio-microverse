@@ -33,7 +33,7 @@ ul {
   padding: 0 1rem;
 }
 
-.navbar-link > a {
+.navbar-link>a {
   text-decoration: none;
   color: #344563;
   font-size: 15px;
@@ -50,7 +50,7 @@ ul {
   margin-top: 4rem;
 }
 
-.headline > h1 {
+.headline>h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,7 +66,7 @@ ul {
   color: #23bb7c;
 }
 
-.headline > p {
+.headline>p {
   font-family: 'Inter', sans-serif;
   margin-top: 1rem;
   width: 50%;
@@ -165,7 +165,7 @@ ul {
   flex-direction: column;
 }
 
-.details > h3 {
+.details>h3 {
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -192,7 +192,7 @@ ul {
   font-weight: 600;
 }
 
-.tech-used-item > a {
+.tech-used-item>a {
   color: #3a4a42;
   text-decoration: none;
 }
@@ -238,7 +238,7 @@ ul {
   background: url("../images/Group.png") 0 100% no-repeat, url("../images/illustration-1-about-me-mobile.svg") right -10% no-repeat;
 }
 
-.about-myself-header > h3 {
+.about-myself-header>h3 {
   font-weight: 700;
   font-family: "Inter", sans-serif;
   text-align: center;
@@ -246,7 +246,7 @@ ul {
   color: #172b4d;
 }
 
-.about-myself-header > p {
+.about-myself-header>p {
   font-family: "Inter", sans-serif;
   font-size: 20px;
   text-align: center;
@@ -268,11 +268,11 @@ ul {
   border-radius: 0.5rem;
 }
 
-.about-me-card > .img-container {
+.about-me-card>.img-container {
   margin-top: 1rem;
 }
 
-.about-me-card > h3 {
+.about-me-card>h3 {
   color: #344563;
   font-family: "Inter", sans-serif;
   font-size: 24px;
@@ -289,7 +289,7 @@ ul {
   margin-bottom: 1.5rem;
 }
 
-.about-me-card:nth-child(1) > .tech-learned {
+.about-me-card:nth-child(1)>.tech-learned {
   margin-bottom: 4.5rem;
 }
 
@@ -303,12 +303,12 @@ ul {
   font-family: "Inter", sans-serif;
 }
 
-.tech-learned-item > a {
+.tech-learned-item>a {
   color: #36b37e;
   text-decoration: none;
 }
 
-.navbar-link > a:hover {
+.navbar-link>a:hover {
   color: #23bb7c;
 }
 
@@ -325,7 +325,7 @@ form {
   background: url("../images/form-background.svg") bottom right no-repeat;
 }
 
-form > h2 {
+form>h2 {
   text-align: center;
   font-weight: 700;
   color: #172b4d;
@@ -463,11 +463,11 @@ footer {
 
   /* HEADLINE */
 
-  .headline > h1 {
+  .headline>h1 {
     text-align: center;
   }
 
-  .headline > p {
+  .headline>p {
     width: 90%;
   }
 }
@@ -523,7 +523,7 @@ footer {
 
   /* HEADLINE */
 
-  .headline > h1 {
+  .headline>h1 {
     font-size: 48px;
   }
 
@@ -555,7 +555,7 @@ footer {
     margin-bottom: 3rem;
   }
 
-  .about-myself-header > p {
+  .about-myself-header>p {
     width: 77%;
   }
 
@@ -599,7 +599,7 @@ footer {
     margin-top: 0;
   }
 
-  .about-myself-header > p {
+  .about-myself-header>p {
     width: 55%;
   }
 
@@ -651,7 +651,7 @@ footer {
 @media screen and (min-width: 1040px) and (max-width: 1152px) {
   /* ABOUT ME SECTION */
 
-  .about-me-card:nth-child(1) > .tech-learned {
+  .about-me-card:nth-child(1)>.tech-learned {
     margin-bottom: 1.5rem;
   }
 }
@@ -664,7 +664,7 @@ footer {
     background-size: cover;
   }
 
-  .navbar-link > a {
+  .navbar-link>a {
     font-size: 40px;
   }
 
@@ -674,14 +674,33 @@ footer {
     margin-top: 18rem;
   }
 
-  .headline > h1 {
+  .headline>h1 {
     font-size: 78px;
   }
 
-  .headline > p {
+  .headline>p {
     font-size: 38px;
     margin-top: 3rem;
     line-height: 1;
     width: 36%;
   }
+}
+
+.project-sample:hover {
+  animation: breathing-shadow 1s infinite ease-in-out;
+}
+
+@keyframes breathing-shadow {
+  0% {
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  50% {
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.50);
+  }
+
+  100% {
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.15);
+  }
+
 }
