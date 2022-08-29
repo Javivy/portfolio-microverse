@@ -617,6 +617,12 @@ footer {
     width: 55%;
   }
 
+  .about-me-card:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 23px 6px #172b4d52;
+  }
+
+
   /* FORM SECTION */
 
   form {
@@ -635,16 +641,6 @@ footer {
   .form-btn {
     margin: 0;
   }
-
-  /* GRAY LINE */
-
-  /* .gray-line {
-    display: block;
-    height: 1px;
-    width: 100%;
-    margin-top: 1rem;
-    background-color: #dfe1e6;
-  } */
 
   /* FOOTER */
 
@@ -720,6 +716,7 @@ footer {
 }
 
 .about-me-card:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
   box-shadow: 0 0 23px 6px #172b4d52;
 }
+
