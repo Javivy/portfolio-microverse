@@ -212,7 +212,7 @@ ul {
   padding: 11px;
   font-family: "Inter", sans-serif;
   color: #fff;
-  background-color: #36b37f;
+  background-color: #2ea573;
   margin: 0 auto;
   cursor: pointer;
   border-radius: 4px;
@@ -220,12 +220,16 @@ ul {
 }
 
 .green-btn:hover {
-  background-color: #36b37f;
+  background-color: #1b8b5d;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .green-btn:active {
-  background-color: #008552;
+  background-color: #016b42;
+}
+
+.green-btn:focus {
+  background-color: #016b42;
 }
 
 /* ABOUT ME SECTION */
@@ -327,7 +331,7 @@ form > h2 {
 }
 
 .navbar-link > a:hover {
-  color: #23bb7c;
+  color: #10a567;
 }
 
 /* FORM SECTION */
