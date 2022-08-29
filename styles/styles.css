@@ -246,7 +246,7 @@ ul {
   background: url("../images/Group.png") 0 100% no-repeat, url("../images/illustration-1-about-me-mobile.svg") right -10% no-repeat;
 }
 
-.about-myself-header > h3 {
+.about-myself-header > h2 {
   font-weight: 700;
   font-family: "Inter", sans-serif;
   text-align: center;
@@ -520,6 +520,11 @@ footer {
       "hl hl hl hl"
       "hl hl hl hl"
       "hl hl hl hl";
+      height: 50rem;
+  }
+
+  .headline > h1 {
+    width: 65%;
   }
 
   nav {
@@ -594,6 +599,12 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+  /* HEADER SECTION */
+
+  .headline > p {
+    width: 65%;
+  }
+
   /* WORKS SECTION */
 
   .projects {
@@ -629,7 +640,7 @@ footer {
     display: grid;
     grid-template-columns: 35% 65%;
     background: url("../images/illustration-1-contact-form-desktop.svg") bottom left no-repeat, url("../images/illustration-2-contact-form-desktop.svg") bottom no-repeat;
-    height: 35rem;
+    height: 50rem;
     margin: 0;
   }
 
