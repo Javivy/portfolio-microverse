@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -730,4 +731,3 @@ footer {
   transform: scale(1.05);
   box-shadow: 0 0 23px 6px #172b4d52;
 }
-
