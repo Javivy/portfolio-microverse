@@ -17,6 +17,7 @@
 
 - GitHub: [@Javivy](https://github.com/Javivy)
 - LinkedIn: [Javier Vargas](https://www.linkedin.com/in/javier-alejandro-vargas-ortega-5998a5212/)
+- Twitter [@Javivy_2803](https://twitter.com/Javivy_2803)
 
 ## Live Sample 🔗
 
