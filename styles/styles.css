@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -250,7 +251,15 @@ ul {
   background: url("../images/Group.png") 0 100% no-repeat, url("../images/illustration-1-about-me-mobile.svg") right -10% no-repeat;
 }
 
-.about-myself-header > h3 {
+form > h2 {
+  text-align: center;
+  font-weight: 700;
+  color: #172b4d;
+  font-size: 40px;
+  padding: 1rem;
+}
+
+.about-myself-header > h2 {
   font-weight: 700;
   font-family: "Inter", sans-serif;
   text-align: center;
@@ -336,14 +345,6 @@ form {
   margin: 2rem auto;
   font-family: "Inter", sans-serif;
   background: url("../images/form-background.svg") bottom right no-repeat;
-}
-
-form > h2 {
-  text-align: center;
-  font-weight: 700;
-  color: #172b4d;
-  font-size: 40px;
-  padding: 1rem;
 }
 
 .form-ul {
@@ -524,6 +525,7 @@ footer {
       "hl hl hl hl"
       "hl hl hl hl"
       "hl hl hl hl";
+    height: 57rem;
   }
 
   nav {
@@ -543,6 +545,7 @@ footer {
 
   .headline > h1 {
     font-size: 48px;
+    width: 57%;
   }
 
   /* RECENT WORKS SECTION */
@@ -598,6 +601,12 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+  /* HEADLINE */
+
+  .headline > p {
+    width: 65%;
+  }
+
   /* WORKS SECTION */
 
   .projects {
@@ -627,7 +636,7 @@ footer {
     display: grid;
     grid-template-columns: 35% 65%;
     background: url("../images/illustration-1-contact-form-desktop.svg") bottom left no-repeat, url("../images/illustration-2-contact-form-desktop.svg") bottom no-repeat;
-    height: 35rem;
+    height: 50rem;
     margin: 0;
   }
 
@@ -674,6 +683,14 @@ footer {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  /* HEADLINE */
+
+  .headline > p {
+    width: 60%;
+  }
+}
+
 @media screen and (min-width: 2560px) {
   /* HEADER */
 
@@ -700,7 +717,7 @@ footer {
     font-size: 38px;
     margin-top: 3rem;
     line-height: 1;
-    width: 36%;
+    width: 70%;
   }
 }
 
@@ -724,6 +741,6 @@ footer {
 }
 
 .about-me-card:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
   box-shadow: 0 0 23px 6px #172b4d52;
 }
