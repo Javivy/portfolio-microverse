@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 header {
@@ -236,14 +235,6 @@ ul {
   justify-content: center;
 }
 
-form > h2 {
-  text-align: center;
-  font-weight: 700;
-  color: #172b4d;
-  font-size: 40px;
-  padding: 1rem;
-}
-
 .about-myself-header {
   display: flex;
   flex-direction: column;
@@ -255,7 +246,7 @@ form > h2 {
   background: url("../images/Group.png") 0 100% no-repeat, url("../images/illustration-1-about-me-mobile.svg") right -10% no-repeat;
 }
 
-.about-myself-header > h2 {
+.about-myself-header > h3 {
   font-weight: 700;
   font-family: "Inter", sans-serif;
   text-align: center;
@@ -341,6 +332,14 @@ form {
   margin: 2rem auto;
   font-family: "Inter", sans-serif;
   background: url("../images/form-background.svg") bottom right no-repeat;
+}
+
+form > h2 {
+  text-align: center;
+  font-weight: 700;
+  color: #172b4d;
+  font-size: 40px;
+  padding: 1rem;
 }
 
 .form-ul {
@@ -521,12 +520,6 @@ footer {
       "hl hl hl hl"
       "hl hl hl hl"
       "hl hl hl hl";
-    height: 50rem;
-  }
-
-  .headline > h1 {
-    width: 65%;
-    font-size: 48px;
   }
 
   nav {
@@ -540,6 +533,12 @@ footer {
   .desktop-ul {
     display: flex;
     justify-content: center;
+  }
+
+  /* HEADLINE */
+
+  .headline > h1 {
+    font-size: 48px;
   }
 
   /* RECENT WORKS SECTION */
@@ -595,12 +594,6 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
-  /* HEADER SECTION */
-
-  .headline > p {
-    width: 65%;
-  }
-
   /* WORKS SECTION */
 
   .projects {
@@ -630,7 +623,7 @@ footer {
     display: grid;
     grid-template-columns: 35% 65%;
     background: url("../images/illustration-1-contact-form-desktop.svg") bottom left no-repeat, url("../images/illustration-2-contact-form-desktop.svg") bottom no-repeat;
-    height: 50rem;
+    height: 35rem;
     margin: 0;
   }
 
@@ -642,6 +635,16 @@ footer {
   .form-btn {
     margin: 0;
   }
+
+  /* GRAY LINE */
+
+  /* .gray-line {
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: #dfe1e6;
+  } */
 
   /* FOOTER */
 
@@ -717,6 +720,6 @@ footer {
 }
 
 .about-me-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.2);
   box-shadow: 0 0 23px 6px #172b4d52;
 }
