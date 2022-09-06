@@ -11,6 +11,65 @@ header {
   height: 100vh;
 }
 
+.visible {
+  margin-top: -38px;
+  height: 110%;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+nav.menu {
+  background: #fff;
+}
+
+nav.menu ul {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0 0 1rem;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+nav.menu ul li {
+  margin: 0.5rem 0;
+}
+
+.navbar-link > a {
+  text-decoration: none;
+  color: #344563;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 600;
+  transition: color 0.5s;
+}
+
+.tech-used-item > a {
+  color: #3a4a42;
+  text-decoration: none;
+}
+
+.tech-learned-item > a {
+  color: #36b37e;
+  text-decoration: none;
+}
+
+nav.menu > ul > li > a {
+  color: #3a4a42;
+  text-decoration: none;
+}
+
+.close-menu-btn {
+  float: right;
+  margin: 0 1rem;
+}
+
 /* NAVBAR */
 
 nav {
@@ -24,23 +83,8 @@ nav {
   display: none;
 }
 
-ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-}
-
 .navbar-link {
   padding: 0 1rem;
-}
-
-.navbar-link > a {
-  text-decoration: none;
-  color: #344563;
-  font-size: 15px;
-  line-height: 20px;
-  font-weight: 600;
-  transition: color 0.5s;
 }
 
 /* HEADLINE */
@@ -71,7 +115,7 @@ ul {
 .headline > p {
   font-family: "Inter", sans-serif;
   margin-top: 1rem;
-  width: 50%;
+  width: 65%;
   line-height: 1.8rem;
   text-align: center;
   font-size: 20px;
@@ -116,7 +160,7 @@ ul {
 .works-section {
   display: grid;
   grid-template-columns: 1 80%;
-  margin-top: 6rem;
+  margin-top: 10rem;
   justify-content: center;
 }
 
@@ -198,11 +242,6 @@ ul {
 
 .tech-used-item:hover {
   background: #cdd3d1;
-}
-
-.tech-used-item > a {
-  color: #3a4a42;
-  text-decoration: none;
 }
 
 .green-btn {
@@ -323,11 +362,6 @@ form > h2 {
   border-radius: 4px;
   font-weight: 600;
   font-family: "Inter", sans-serif;
-}
-
-.tech-learned-item > a {
-  color: #36b37e;
-  text-decoration: none;
 }
 
 .navbar-link > a:hover {
@@ -485,10 +519,6 @@ footer {
   .headline > h1 {
     text-align: center;
   }
-
-  .headline > p {
-    width: 90%;
-  }
 }
 
 @media screen and (min-width: 200px) and (max-width: 300px) {
@@ -532,6 +562,10 @@ footer {
     grid-area: nav;
   }
 
+  .visible {
+    display: none !important;
+  }
+
   .mobile-ul {
     display: none;
   }
@@ -546,6 +580,10 @@ footer {
   .headline > h1 {
     font-size: 48px;
     width: 57%;
+  }
+
+  .headline > p {
+    width: 60%;
   }
 
   /* RECENT WORKS SECTION */
