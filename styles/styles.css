@@ -13,10 +13,10 @@ header {
 
 .visible {
   margin-top: -38px;
-  display: none;
-  height: 100%;
+  height: 110%;
   position: fixed;
   width: 100%;
+  overflow: hidden;
 }
 
 ul {
@@ -32,7 +32,7 @@ nav.menu {
 nav.menu ul {
   display: flex;
   flex-direction: column;
-  padding-left: 1rem;
+  padding: 2rem 0 0 1rem;
   font-size: 32px;
   font-weight: 600;
 }
@@ -160,7 +160,7 @@ nav {
 .works-section {
   display: grid;
   grid-template-columns: 1 80%;
-  margin-top: 6rem;
+  margin-top: 10rem;
   justify-content: center;
 }
 
@@ -560,6 +560,10 @@ footer {
 
   nav {
     grid-area: nav;
+  }
+
+  .visible {
+    display: none !important;
   }
 
   .mobile-ul {
