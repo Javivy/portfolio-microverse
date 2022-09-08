@@ -11,14 +11,6 @@ header {
   height: 100vh;
 }
 
-.visible {
-  margin-top: -38px;
-  height: 110%;
-  position: fixed;
-  width: 100%;
-  overflow: hidden;
-}
-
 ul {
   display: flex;
   list-style: none;
@@ -26,6 +18,10 @@ ul {
 }
 
 nav.menu {
+  margin-top: -38px;
+  height: 110%;
+  position: fixed;
+  width: 100%;
   background: #fff;
 }
 
@@ -197,6 +193,95 @@ nav {
   border-radius: 1rem;
   background-color: #ebf0ee;
   margin: 1rem auto;
+}
+
+.popup-close-btn {
+  align-self: flex-end;
+  margin: 1rem;
+}
+
+.popup-project {
+  background: rgba(124, 122, 122, 0.38);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.9px);
+  -webkit-backdrop-filter: blur(7.9px);
+  border: 1px solid rgba(124, 122, 122, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  padding: 4rem 0 1rem 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
+}
+
+.popup-project-container {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding: 1rem;
+  width: 90%;
+  border-radius: 1rem;
+  margin-top: 20rem;
+}
+
+.popup-project-container > h4 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #172b4d;
+  margin-top: 0.5rem;
+}
+
+.popup-project-container > p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #344563;
+}
+
+.project-img-container {
+  height: 100%;
+  width: 100%;
+}
+
+.project-img-container > img {
+  height: 100%;
+  width: 100%;
+}
+
+.tech-used-popup {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 1rem 0;
+  justify-content: flex-start;
+}
+
+.popup-btns-container {
+  display: flex;
+  justify-content: flex-start;
+  align-self: flex-start;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.popup-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.popup-btn:nth-child(1) {
+  margin-right: 2rem;
 }
 
 .details {
@@ -593,9 +678,17 @@ footer {
     flex-direction: column;
   }
 
+  .works-section-header {
+    margin: 2rem auto;
+  }
+
   .projects {
     display: grid;
     grid-template-columns: repeat(2, auto);
+  }
+
+  .short-line {
+    display: none;
   }
 
   /* ABOUT ME SECTION */
