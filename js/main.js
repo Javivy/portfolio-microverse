@@ -1,16 +1,13 @@
 /* eslint-disable no-plusplus */
 /* eslint-disable no-unused-vars */
+import { formListener, displayData } from './form.js';
+
 const openMenuBtn = document.querySelector('.open-menu-btn');
 const closeMenuBtn = document.querySelector('.close-menu-btn');
 const mobileMenu = document.querySelector('.visible');
 const mobileNav = document.querySelector('.mobile-ul');
 const projectsContainer = document.querySelector('.projects');
-const popupOpenBtn = document.querySelector('.popup-open-btn');
-const popupCloseBtn = document.querySelector('.popup-close-btn');
-const form = document.getElementById('contact');
-const emailForm = document.getElementById('email-address');
-const emailError = document.querySelector('.form-error');
-const formBtn = document.querySelector('.form-btn');
+const menuBtns = document.querySelectorAll('.menu-btn');
 
 const projectData = [
   {
@@ -80,13 +77,7 @@ const projectData = [
   },
 ];
 
-// Some comment
-const localStorageObj = {
-  name: inputName,
-  message: inputMessage,
-};
-
- function createProject(index) {
+function createProject(index) {
   const { name, technologies } = projectData[index];
   const projectSample = document.createElement('div');
   const projectDetails = document.createElement('div');
@@ -122,6 +113,16 @@ const localStorageObj = {
   projectsContainer.append(projectSample);
   return projectsContainer;
 }
+
+const enableScroll = () => {
+  window.onscroll = () => {};
+};
+
+const closePopup = () => {
+  const popupProject = document.querySelector('.popup-project');
+  popupProject.remove();
+  enableScroll();
+};
 
 const createPopupProject = (id) => {
   const {
@@ -186,9 +187,6 @@ const createPopupProject = (id) => {
   popupSnapshotDesktop.setAttribute('src', desktopSnapshot);
   popupLiveIcon.setAttribute('src', 'icons/live-server-icon.svg');
   popupSourceIcon.setAttribute('src', 'icons/github-icon.svg');
-  popupCloseBtn.setAttribute('onclick', 'closePopup()');
-  popupBtnLive.setAttribute('onclick', 'closePopup()');
-  popupBtnSource.setAttribute('onclick', 'closePopup()');
   popupBtnLive.setAttribute('href', linkLiveServer);
   popupBtnSource.setAttribute('href', linkSource);
 
@@ -197,14 +195,9 @@ const createPopupProject = (id) => {
   popupImgContainerDesktop.append(popupSnapshotDesktop);
   popupBtnLive.append(popupLiveIcon);
   popupBtnSource.append(popupSourceIcon);
-  popupBtnsDesktop.innerHTML = `
-  <a class="green-btn popup-btn" onclick="closePopup()" href="#">
-  See live <img src="icons/live-server-icon.svg"/>
-  </a>
-  <a class="green-btn popup-btn" onclick="closePopup()" href="#">
-  See Source <img src="icons/github-icon.svg"/>
-  </a>
-  `;
+  const popupBtnLiveDesktop = popupBtnLive.cloneNode(true);
+  const popupBtnSourceDesktop = popupBtnSource.cloneNode(true);
+  popupBtnsDesktop.append(popupBtnLiveDesktop, popupBtnSourceDesktop);
   popupHeader.append(popupTitle, popupBtnsDesktop);
   popupBtnsMobile.append(popupBtnLive, popupBtnSource);
   popupProjectContainer.append(
@@ -216,6 +209,13 @@ const createPopupProject = (id) => {
     popupDescription,
     popupBtnsMobile,
   );
+
+  popupCloseBtn.addEventListener('click', closePopup);
+  popupBtnLive.addEventListener('click', closePopup);
+  popupBtnLiveDesktop.addEventListener('click', closePopup);
+  popupBtnSourceDesktop.addEventListener('click', closePopup);
+  popupBtnSource.addEventListener('click', closePopup);
+
   popupProject.append(popupProjectContainer);
 
   return popupProject;
@@ -238,20 +238,10 @@ const disableScroll = () => {
   };
 };
 
-const enableScroll = () => {
-  window.onscroll = () => {};
-};
-
 const openPopup = (id) => {
   const pop = createPopupProject(id);
   projectsContainer.append(pop);
   disableScroll();
-};
-
-const closePopup = () => {
-  const popupProject = document.querySelector('.popup-project');
-  popupProject.remove();
-  enableScroll();
 };
 
 openMenuBtn.addEventListener('click', () => {
@@ -284,22 +274,9 @@ const closeMenu = () => {
   enableScroll();
 };
 
-function validateEmail(email) {
-  if (!email.checkValidity()) {
-    emailError.classList.remove('error-visible');
-    return false;
-  }
-  emailError.classList.add('error-visible');
-  return true;
-}
-
-formBtn.addEventListener('click', () => {
-  validateEmail(emailForm);
+menuBtns.forEach((c) => {
+  c.addEventListener('click', closeMenu);
 });
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  if (validateEmail(emailForm)) {
-    form.submit();
-  }
-});
+displayData();
+formListener();
