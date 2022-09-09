@@ -580,6 +580,24 @@ form {
   outline: none;
 }
 
+.form-error {
+  color: #ff4421;
+  width: 100%;
+  margin-left: 1rem;
+  align-self: center;
+}
+
+.error-visible {
+  display: none;
+}
+
+.form-btn {
+  margin: 0;
+  width: 25%;
+}
+
+/* FOOTER */
+
 footer {
   display: flex;
   flex-direction: column;
@@ -856,8 +874,21 @@ footer {
     justify-content: flex-start;
   }
 
+  .form-error {
+    color: #ff4421;
+    width: 70%;
+    margin-left: 1rem;
+    align-self: center;
+    text-align: center;
+  }
+
+  .error-visible {
+    display: none;
+  }
+
   .form-btn {
     margin: 0;
+    width: 20%;
   }
 
   /* GRAY LINE */
