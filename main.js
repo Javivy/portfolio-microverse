@@ -273,3 +273,8 @@ const closeMenu = () => {
   mobileMenu.style.display = 'none';
   enableScroll();
 };
+function validateEmail(email) {
+  var re =/^[a-z_A-Z\-0-9\.\*\#\$\!\~\%\^\&\-\+\?\|]+@+[a-zA-Z\-0-9]+(.com)$/;  
+  return re.test(email); 
+  }
+  
