@@ -81,8 +81,12 @@ const projectData = [
 ];
 
 // Some comment
+const localStorageObj = {
+  name: inputName,
+  message: inputMessage,
+};
 
-function createProject(index) {
+ function createProject(index) {
   const { name, technologies } = projectData[index];
   const projectSample = document.createElement('div');
   const projectDetails = document.createElement('div');
