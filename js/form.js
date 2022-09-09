@@ -34,19 +34,42 @@ function formListener() {
     e.preventDefault();
 
     if (validateEmail(emailForm)) {
-      const nameValue = nameFormInput.value;
-      const msgValue = msgFormInput.value;
-      const emailValue = emailForm.value;
-      const localStorageObj = {
-        name: nameValue,
-        msg: msgValue,
-        email: emailValue,
-      };
-      storageData(localStorageObj);
-      setTimeout(() => {
-        form.submit();
-      }, 1000);
+      form.submit();
     }
+  });
+
+  nameFormInput.addEventListener('input', () => {
+    const nameValue = nameFormInput.value;
+    const msgValue = msgFormInput.value;
+    const emailValue = emailForm.value;
+    const localStorageObj = {
+      name: nameValue,
+      msg: msgValue,
+      email: emailValue,
+    };
+    storageData(localStorageObj);
+  });
+  msgFormInput.addEventListener('input', () => {
+    const nameValue = nameFormInput.value;
+    const msgValue = msgFormInput.value;
+    const emailValue = emailForm.value;
+    const localStorageObj = {
+      name: nameValue,
+      msg: msgValue,
+      email: emailValue,
+    };
+    storageData(localStorageObj);
+  });
+  emailForm.addEventListener('input', () => {
+    const nameValue = nameFormInput.value;
+    const msgValue = msgFormInput.value;
+    const emailValue = emailForm.value;
+    const localStorageObj = {
+      name: nameValue,
+      msg: msgValue,
+      email: emailValue,
+    };
+    storageData(localStorageObj);
   });
 }
 
