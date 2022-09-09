@@ -94,7 +94,6 @@ function createProject(index) {
 
   seeProjectBtn.type = 'button';
   seeProjectBtn.id = `project-${index}`;
-  //  seeProjectBtn.setAttribute('onclick', 'openPopup()');
 
   for (let i = 0; i < technologies.length; i++) {
     const projectLi = document.createElement('li');
