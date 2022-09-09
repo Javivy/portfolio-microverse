@@ -186,7 +186,7 @@
         </h2>
         <ul class="form-ul">
           <li class="form-li fst-and-lst-nm-input">
-            <input
+            <!-- <input
               autocomplete="off"
               maxlength="30"
               type="text"
@@ -203,11 +203,10 @@
               id="last-name"
               placeholder="Last Name"
               required
-            />
+            /> -->
           </li>
           <li class="form-li full-name-input">
             <input
-              autocomplete="off"
               maxlength="30"
               type="text"
               name="full-name"
@@ -218,17 +217,16 @@
           </li>
           <li class="form-li">
             <input
-              autocomplete="off"
               type="email"
               name="email-address"
               id="email-address"
               placeholder="Email address"
+              pattern="^[a-z0-9.*#$!~%^&-+?|]+@+[a-z-0-9]+(.com)$"
               required
             />
           </li>
           <li class="form-li">
             <textarea
-              autocomplete="off"
               name="message"
               id="message"
               cols="30"
@@ -242,6 +240,9 @@
             <button type="submit" class="green-btn form-btn">
               Get in touch
             </button>
+            <span class="form-error error-visible">
+              The form has not been submitted. Please be sure you're filling all the fields correctly
+            </span>
           </li>
         </ul>
       </form>

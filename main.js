@@ -7,6 +7,10 @@ const mobileNav = document.querySelector('.mobile-ul');
 const projectsContainer = document.querySelector('.projects');
 const popupOpenBtn = document.querySelector('.popup-open-btn');
 const popupCloseBtn = document.querySelector('.popup-close-btn');
+const form = document.getElementById('contact');
+const emailForm = document.getElementById('email-address');
+const emailError = document.querySelector('.form-error');
+const formBtn = document.querySelector('.form-btn');
 
 const projectData = [
   {
@@ -273,8 +277,23 @@ const closeMenu = () => {
   mobileMenu.style.display = 'none';
   enableScroll();
 };
+
 function validateEmail(email) {
-  var re =/^[a-z_A-Z\-0-9\.\*\#\$\!\~\%\^\&\-\+\?\|]+@+[a-zA-Z\-0-9]+(.com)$/;  
-  return re.test(email); 
+  if (!email.checkValidity()) {
+    emailError.classList.remove('error-visible');
+    return false;
   }
-  
+  emailError.classList.add('error-visible');
+  return true;
+}
+
+formBtn.addEventListener('click', () => {
+  validateEmail(emailForm);
+});
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  if (validateEmail(emailForm)) {
+    form.submit();
+  }
+});
