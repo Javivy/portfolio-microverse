@@ -80,6 +80,8 @@ const projectData = [
   },
 ];
 
+// Some comment
+
 function createProject(index) {
   const { name, technologies } = projectData[index];
   const projectSample = document.createElement('div');
