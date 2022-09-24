@@ -5,6 +5,11 @@
   scroll-behavior: smooth;
 }
 
+*::selection {
+  background-color: #10a567;
+  color: #fff;
+}
+
 header {
   background-image: url("../images/header-illsutration-mobile.svg");
   background-size: cover;
@@ -269,6 +274,7 @@ nav {
   margin: 1rem 0;
   justify-content: flex-start;
   align-self: flex-start;
+  font-family: 'Inter', sans-serif;
 }
 
 .popup-btns-container-mobile {
@@ -747,6 +753,7 @@ footer {
 
   .tech-used-popup {
     align-self: flex-start;
+    font-family: 'Inter', sans-serif;
   }
 
   .popup-btns-container-desktop {
