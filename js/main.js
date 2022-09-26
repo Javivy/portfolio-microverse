@@ -1,6 +1,9 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-plusplus */
 /* eslint-disable no-unused-vars */
 import { formListener, displayData } from './form.js';
+
+window.sr = ScrollReveal();
 
 const openMenuBtn = document.querySelector('.open-menu-btn');
 const closeMenuBtn = document.querySelector('.close-menu-btn');
@@ -8,6 +11,32 @@ const mobileMenu = document.querySelector('.visible');
 const mobileNav = document.querySelector('.mobile-ul');
 const projectsContainer = document.querySelector('.projects');
 const menuBtns = document.querySelectorAll('.menu-btn');
+const portfolio = document.getElementById('portfolio');
+const form = document.getElementById('contact');
+
+sr.reveal(portfolio, {
+  duration: 2000,
+  origin: 'bottom',
+  distance: '-100px',
+});
+
+sr.reveal('.about-myself', {
+  duration: 2000,
+  origin: 'top',
+  distance: '100px',
+});
+
+sr.reveal('.headline-title', {
+  duration: 2500,
+  origin: 'right',
+  distance: '50px',
+});
+
+sr.reveal(form, {
+  duration: 2000,
+  origin: 'left',
+  distance: '150px',
+});
 
 const projectData = [
   {
