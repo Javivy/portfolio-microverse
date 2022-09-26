@@ -30,12 +30,14 @@ sr.reveal('.headline-title', {
   duration: 2500,
   origin: 'right',
   distance: '50px',
+  delay: 300,
 });
 
 sr.reveal(form, {
   duration: 2000,
   origin: 'left',
   distance: '150px',
+  delay: 200,
 });
 
 const projectData = [
