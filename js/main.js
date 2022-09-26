@@ -11,14 +11,7 @@ const mobileMenu = document.querySelector('.visible');
 const mobileNav = document.querySelector('.mobile-ul');
 const projectsContainer = document.querySelector('.projects');
 const menuBtns = document.querySelectorAll('.menu-btn');
-const portfolio = document.getElementById('portfolio');
 const form = document.getElementById('contact');
-
-sr.reveal(portfolio, {
-  duration: 2000,
-  origin: 'bottom',
-  distance: '-100px',
-});
 
 sr.reveal('.about-myself', {
   duration: 2000,

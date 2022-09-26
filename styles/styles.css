@@ -22,12 +22,22 @@ ul {
   justify-content: space-between;
 }
 
+.mobile-ul {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
 nav.menu {
   margin-top: -38px;
   height: 110%;
   position: fixed;
   width: 100%;
   background: #fff;
+  z-index: 2;
 }
 
 nav.menu ul {
@@ -68,7 +78,7 @@ nav.menu > ul > li > a {
 
 .close-menu-btn {
   float: right;
-  margin: 0 1rem;
+  margin: 1rem;
 }
 
 /* NAVBAR */
@@ -224,6 +234,7 @@ nav {
   right: 0;
   bottom: 0;
   overflow-y: scroll;
+  z-index: 2;
 }
 
 .popup-project-container {
@@ -998,4 +1009,20 @@ footer {
 .about-me-card:hover {
   transform: scale(1.05);
   box-shadow: 0 0 23px 6px #172b4d52;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
