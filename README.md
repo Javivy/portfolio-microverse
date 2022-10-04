@@ -2,7 +2,7 @@
 
 # Portfolio Microverse
 
-> This is my portfolio from Microverse project, made for practice and show off my abilities using HTML&CSS, flexbox, git, Github, and branches.
+> This is my portfolio project from Microverse, made for practice and show off my abilities using HTML&CSS, flexbox, GitHub flow, GitHub branches, linters, creating the structure with HTML and styling it with CSS, adding some JavaScript for more functionality, such as modals, clicks, display projects dynamically, and more.
 
 
 ## Built With
