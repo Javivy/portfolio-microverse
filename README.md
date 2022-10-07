@@ -23,6 +23,14 @@
 
 - GitHub: [@Duncannjau](https://github.com/Duncannjau)
 
+👤 **Mahdi**
+
+- GitHub: [@MahdiAghaali](https://github.com/MahdiAghaali)
+
+👤 **Juan**
+
+- GitHub: [@juandapps](https://github.com/juandapps)
+
 ## Live Sample 🔗
 
 [Link to the Portfolio](https://javivy.github.io/portfolio-microverse/)
