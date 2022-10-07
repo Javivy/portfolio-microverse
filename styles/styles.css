@@ -222,14 +222,10 @@ nav {
   backdrop-filter: blur(7.9px);
   -webkit-backdrop-filter: blur(7.9px);
   border: 1px solid rgba(124, 122, 122, 0.3);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
   position: fixed;
-  padding: 4rem 0 1rem 0;
+  padding: 1rem 0 1rem 0;
   left: 0;
   right: 0;
   bottom: 0;
@@ -243,10 +239,10 @@ nav {
   flex-direction: column;
   align-items: center;
   align-content: center;
+  margin: 0 auto;
   padding: 1rem;
   width: 90%;
   border-radius: 1rem;
-  margin-top: 22rem;
 }
 
 .popup-header > h4 {
@@ -737,9 +733,13 @@ footer {
     display: none;
   }
 
-  .popup-project {
+  /* .popup-project {
     padding: 0 0 1rem 0;
   }
+
+  .popup-project-container {
+    margin-top: 5%;
+  } */
 
   .mobile-snapshot {
     display: none;
@@ -830,13 +830,9 @@ footer {
 }
 
 @media screen and (min-width: 914px) {
-  .popup-project {
+  /* .popup-project {
     padding: 4rem 0 1rem 0;
-  }
-
-  .popup-project-container {
-    margin-top: 26rem;
-  }
+  } */
 }
 
 @media screen and (min-width: 1024px) {
@@ -857,13 +853,9 @@ footer {
     width: 95%;
   }
 
-  .popup-project {
+  /* .popup-project {
     padding: 7rem 0 1rem 0;
-  }
-
-  .popup-project-container {
-    margin-top: 30rem;
-  }
+  } */
 
   /* ABOUT ME SECTION */
 
@@ -940,12 +932,6 @@ footer {
 
   .about-me-card:nth-child(1) > .tech-learned {
     margin-bottom: 1.5rem;
-  }
-}
-
-@media screen and (min-width: 1100px) {
-  .popup-project {
-    padding: 7rem 0 1rem 0;
   }
 }
 

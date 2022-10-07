@@ -35,22 +35,22 @@ sr.reveal(form, {
 
 const projectData = [
   {
-    name: 'Multi-Post stories Gain+Glory',
-    title: 'Project 1',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    mobileSnapshot: 'images/snapshot-portfolio-mobile.png',
-    desktopSnapshot: 'images/Snapshoot-Portfolio.png',
-    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    linkLiveServer: '#',
-    linkSource: '#',
+    name: 'Capstone Project',
+    title: 'Capstone Project',
+    description: "This is the capstone project for the 1st module at Microverse, the aim for this project is to show off and put into practice all the knowledge we've been learning throughout the 1st module.",
+    mobileSnapshot: 'images/capstone-project-mobile.jpg',
+    desktopSnapshot: 'images/Capstone-project.png',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    linkLiveServer: 'https://javivy.github.io/capstone-1/index.html',
+    linkSource: 'https://github.com/Javivy/capstone-1',
   },
 
   {
     name: 'Multi-Post stories Gain+Glory',
     title: 'Project 2',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    mobileSnapshot: 'images/snapshot-portfolio-mobile.png',
-    desktopSnapshot: 'images/Snapshoot-Portfolio.png',
+    mobileSnapshot: 'images/capstone-project-mobile.jpg',
+    desktopSnapshot: 'images/Capstone-project.png',
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     linkLiveServer: '#',
     linkSource: '#',
@@ -60,8 +60,8 @@ const projectData = [
     name: 'Multi-Post stories Gain+Glory',
     title: 'Project 3',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    mobileSnapshot: 'images/snapshot-portfolio-mobile.png',
-    desktopSnapshot: 'images/Snapshoot-Portfolio.png',
+    mobileSnapshot: 'images/capstone-project-mobile.jpg',
+    desktopSnapshot: 'images/Capstone-project.png',
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     linkLiveServer: '#',
     linkSource: '#',
@@ -71,8 +71,8 @@ const projectData = [
     name: 'Multi-Post stories Gain+Glory',
     title: 'Project 4',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    mobileSnapshot: 'images/snapshot-portfolio-mobile.png',
-    desktopSnapshot: 'images/Snapshoot-Portfolio.png',
+    mobileSnapshot: 'images/capstone-project-mobile.jpg',
+    desktopSnapshot: 'images/Capstone-project.png',
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     linkLiveServer: '#',
     linkSource: '#',
@@ -82,8 +82,8 @@ const projectData = [
     name: 'Multi-Post stories Gain+Glory',
     title: 'Project 5',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    mobileSnapshot: 'images/snapshot-portfolio-mobile.png',
-    desktopSnapshot: 'images/Snapshoot-Portfolio.png',
+    mobileSnapshot: 'images/capstone-project-mobile.jpg',
+    desktopSnapshot: 'images/Capstone-project.png',
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     linkLiveServer: '#',
     linkSource: '#',
@@ -93,8 +93,8 @@ const projectData = [
     name: 'Multi-Post stories Gain+Glory',
     title: 'Project 6',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    mobileSnapshot: 'images/snapshot-portfolio-mobile.png',
-    desktopSnapshot: 'images/Snapshoot-Portfolio.png',
+    mobileSnapshot: 'images/capstone-project-mobile.jpg',
+    desktopSnapshot: 'images/Capstone-project.png',
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     linkLiveServer: '#',
     linkSource: '#',
@@ -102,7 +102,7 @@ const projectData = [
 ];
 
 function createProject(index) {
-  const { name, technologies } = projectData[index];
+  const { name, mobileSnapshot, technologies } = projectData[index];
   const projectSample = document.createElement('div');
   const projectDetails = document.createElement('div');
   const projectName = document.createElement('h3');
@@ -116,6 +116,10 @@ function createProject(index) {
 
   projectName.textContent = name;
   seeProjectBtn.textContent = 'See Project';
+
+  projectSample.style.backgroundImage = `url('../${mobileSnapshot}')`;
+  projectSample.style.backgroundPosition = 'center';
+  projectSample.style.backgroundSize = 'cover';
 
   seeProjectBtn.type = 'button';
   seeProjectBtn.id = `project-${index}`;
@@ -193,6 +197,9 @@ const createPopupProject = (id) => {
   popupBtnLive.textContent = 'See live';
   popupBtnSource.textContent = 'See Source';
   popupDescription.textContent = description;
+
+  popupBtnLive.setAttribute('target', '_blank');
+  popupBtnSource.setAttribute('target', '_blank');
 
   for (let i = 0; i < technologies.length; i++) {
     const popupLi = document.createElement('li');
