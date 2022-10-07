@@ -25,7 +25,7 @@
 
 ## Live Sample 🔗
 
-https://javivy.github.io/portfolio-microverse/
+[Link to the Portfolio](https://javivy.github.io/portfolio-microverse/)
 
 ## Getting Started
 
