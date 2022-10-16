@@ -1,6 +1,6 @@
 import projectObj from './projectsObj.js';
 
-const projectData = projectObj();
+const projectData = projectObj;
 
 const enableScroll = () => {
   window.onscroll = () => {};
