@@ -1,4 +1,4 @@
-const projectObj = () => [
+const projectObj = [
   {
     name: 'Conference Project',
     title: 'Conference Project, Game DEV Conference',
