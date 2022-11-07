@@ -399,6 +399,10 @@ nav {
   background: url("../images/Group.png") 0 100% no-repeat, url("../images/illustration-1-about-me-mobile.svg") right -10% no-repeat;
 }
 
+.get-resume-link {
+  text-decoration: none;
+}
+
 form > h2 {
   text-align: center;
   font-weight: 700;
