@@ -20,7 +20,7 @@ export default function createProject(index) {
   projectName.textContent = name;
   seeProjectBtn.textContent = 'See Project';
 
-  projectSample.style.backgroundImage = `url('../${mobileSnapshot}')`;
+  projectSample.style.backgroundImage = `url('${mobileSnapshot}')`;
   projectSample.style.backgroundPosition = 'center';
   projectSample.style.backgroundSize = 'cover';
 

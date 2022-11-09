@@ -31,39 +31,6 @@ const projectObj = [
     linkLiveServer: 'https://javivy.github.io/js-capstone/dist/',
     linkSource: 'https://github.com/Javivy/js-capstone',
   },
-
-  {
-    name: 'Multi-Post stories Gain+Glory',
-    title: 'Project 4',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    mobileSnapshot: 'images/capstone-project-mobile.jpg',
-    desktopSnapshot: 'images/Capstone-project.png',
-    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    linkLiveServer: '#',
-    linkSource: '#',
-  },
-
-  {
-    name: 'Multi-Post stories Gain+Glory',
-    title: 'Project 5',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    mobileSnapshot: 'images/capstone-project-mobile.jpg',
-    desktopSnapshot: 'images/Capstone-project.png',
-    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    linkLiveServer: '#',
-    linkSource: '#',
-  },
-
-  {
-    name: 'Multi-Post stories Gain+Glory',
-    title: 'Project 6',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    mobileSnapshot: 'images/capstone-project-mobile.jpg',
-    desktopSnapshot: 'images/Capstone-project.png',
-    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    linkLiveServer: '#',
-    linkSource: '#',
-  },
 ];
 
 export default projectObj;
