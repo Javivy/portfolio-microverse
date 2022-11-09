@@ -3,7 +3,7 @@ import projectObj from './projectsObj.js';
 const projectData = projectObj;
 
 const enableScroll = () => {
-  window.onscroll = () => {};
+  document.body.style.overflowY = 'auto';
 };
 
 const closePopup = () => {
