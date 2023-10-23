@@ -31,6 +31,28 @@ const projectObj = [
     linkLiveServer: 'https://javivy.github.io/js-capstone/dist/',
     linkSource: 'https://github.com/Javivy/js-capstone',
   },
+
+  {
+    name: 'Cryptocurrency Website',
+    title: 'React Capstone',
+    description: 'This is the project made for the React/Redux module capstone, I made use of technologies such as React to create components, Redux to fetch the API data, CSS to style the website, a library to display the graphs of the currencies, etc...',
+    mobileSnapshot: './images/react-capstone-img.png',
+    desktopSnapshot: './images/react-capstone-img.png',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Webpack', 'React', 'Redux', 'RestAPI'],
+    linkLiveServer: 'https://cryptos-website-javivy.netlify.app/cryptos',
+    linkSource: 'https://github.com/Javivy/react-capstone',
+  },
+  
+  {
+    name: 'Blog App',
+    title: 'Ruby on Rails Project',
+    description: 'This is a Ruby on Rails project made to practice, where I had to work collaboratively with my partner Masuma Jeffery, peer-to-peer programming, we set up the project to use Postgresql as the database, and built a project that works as a blog app, where people can log-in, sign-up, it has email-confirmation, authorization, reset-password, create post, comment a post, delete a post, create a comment, delete a comment, give like to a certain post, etc...',
+    mobileSnapshot: './images/no-image.jpg',
+    desktopSnapshot: './images/no-image.jpg',
+    technologies: ['Ruby', 'Ruby on Rails', 'PostgreSQL', 'Devise', 'Capybara'],
+    linkLiveServer: 'https://github.com/MasumaJaffery/Blog_App',
+    linkSource: 'https://github.com/MasumaJaffery/Blog_App',
+  },
 ];
 
 export default projectObj;
